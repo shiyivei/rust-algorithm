@@ -5,29 +5,4 @@
 )]
 
 pub mod complexity_analysis;
-
-fn cal(n: u64) -> u64 {
-    let mut sum = 0;
-
-    let i = 1u64;
-
-    for i in 0..n {
-        sum = sum + i
-    }
-
-    sum
-}
-
-#[cfg(test)]
-
-mod tests {
-
-    use super::*;
-
-    #[test]
-    fn test_complexity_analysis() {
-        let sum = cal(10);
-
-        println!("sum is {}", sum);
-    }
-}
+pub mod leetcode;
